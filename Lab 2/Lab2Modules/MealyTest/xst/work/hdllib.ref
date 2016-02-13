@@ -1,0 +1,10 @@
+AR clk4hz behavioral "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk4Hz.vhd" sub00/vhpl03 1455308426
+AR counter behavioral "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter.vhd" sub00/vhpl07 1455308430
+EN clk4hz NULL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk4Hz.vhd" sub00/vhpl02 1455308425
+AR clock_toplevel structural "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter_toplevel.vhd" sub00/vhpl09 1455308432
+EN counter NULL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter.vhd" sub00/vhpl06 1455308429
+EN clock_toplevel NULL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter_toplevel.vhd" sub00/vhpl08 1455308431
+AR clk2hz behavioral "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk2Hz.vhd" sub00/vhpl01 1455308424
+AR mux_2to1 behavioral "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/mux_2to1.vhd" sub00/vhpl05 1455308428
+EN mux_2to1 NULL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/mux_2to1.vhd" sub00/vhpl04 1455308427
+EN clk2hz NULL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk2Hz.vhd" sub00/vhpl00 1455308423

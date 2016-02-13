@@ -1,0 +1,316 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf
+
+Design file:              ALU.ncd
+Physical constraint file: ALU.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+OPCODE<0>   |    3.718(R)|   -0.375(R)|CLK_BUFGP         |   0.000|
+OPCODE<1>   |    4.130(R)|   -0.705(R)|CLK_BUFGP         |   0.000|
+OPCODE<2>   |    3.838(R)|   -0.471(R)|CLK_BUFGP         |   0.000|
+OPCODE<3>   |    3.672(R)|   -0.339(R)|CLK_BUFGP         |   0.000|
+RA<0>       |    4.653(R)|    0.455(R)|CLK_BUFGP         |   0.000|
+RA<1>       |    4.660(R)|    0.249(R)|CLK_BUFGP         |   0.000|
+RA<2>       |    4.659(R)|    0.961(R)|CLK_BUFGP         |   0.000|
+RA<3>       |    4.678(R)|    0.935(R)|CLK_BUFGP         |   0.000|
+RA<4>       |    4.649(R)|    0.375(R)|CLK_BUFGP         |   0.000|
+RA<5>       |    4.655(R)|    0.403(R)|CLK_BUFGP         |   0.000|
+RA<6>       |    4.662(R)|    0.245(R)|CLK_BUFGP         |   0.000|
+RA<7>       |    4.669(R)|    1.273(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ALU_OUT<0>  |   11.198(R)|CLK_BUFGP         |   0.000|
+ALU_OUT<1>  |   10.594(R)|CLK_BUFGP         |   0.000|
+ALU_OUT<2>  |   10.424(R)|CLK_BUFGP         |   0.000|
+ALU_OUT<3>  |    9.762(R)|CLK_BUFGP         |   0.000|
+ALU_OUT<4>  |   10.514(R)|CLK_BUFGP         |   0.000|
+ALU_OUT<5>  |   10.299(R)|CLK_BUFGP         |   0.000|
+ALU_OUT<6>  |   10.388(R)|CLK_BUFGP         |   0.000|
+ALU_OUT<7>  |    9.081(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<0> |    7.235(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<1> |    7.833(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<2> |    7.256(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<3> |    8.458(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<4> |    8.050(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<5> |    7.514(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<6> |    8.035(R)|CLK_BUFGP         |   0.000|
+LDST_OUT<7> |    8.082(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+OPCODE<0>      |ALU_OUT<0>     |   11.966|
+OPCODE<0>      |ALU_OUT<1>     |   12.160|
+OPCODE<0>      |ALU_OUT<2>     |   11.093|
+OPCODE<0>      |ALU_OUT<3>     |   11.655|
+OPCODE<0>      |ALU_OUT<4>     |   11.628|
+OPCODE<0>      |ALU_OUT<5>     |   12.061|
+OPCODE<0>      |ALU_OUT<6>     |   11.408|
+OPCODE<0>      |ALU_OUT<7>     |   10.708|
+OPCODE<0>      |CCR<0>         |   10.085|
+OPCODE<0>      |CCR<1>         |   10.320|
+OPCODE<0>      |CCR<2>         |   12.213|
+OPCODE<0>      |CCR<3>         |   10.971|
+OPCODE<1>      |ALU_OUT<0>     |   11.447|
+OPCODE<1>      |ALU_OUT<1>     |   11.489|
+OPCODE<1>      |ALU_OUT<2>     |   10.574|
+OPCODE<1>      |ALU_OUT<3>     |   11.136|
+OPCODE<1>      |ALU_OUT<4>     |   11.504|
+OPCODE<1>      |ALU_OUT<5>     |   11.542|
+OPCODE<1>      |ALU_OUT<6>     |   12.460|
+OPCODE<1>      |ALU_OUT<7>     |   11.008|
+OPCODE<1>      |CCR<0>         |    9.566|
+OPCODE<1>      |CCR<1>         |    9.801|
+OPCODE<1>      |CCR<2>         |   11.694|
+OPCODE<1>      |CCR<3>         |   10.452|
+OPCODE<2>      |ALU_OUT<0>     |   11.798|
+OPCODE<2>      |ALU_OUT<1>     |   11.785|
+OPCODE<2>      |ALU_OUT<2>     |   10.925|
+OPCODE<2>      |ALU_OUT<3>     |   11.487|
+OPCODE<2>      |ALU_OUT<4>     |   11.460|
+OPCODE<2>      |ALU_OUT<5>     |   11.893|
+OPCODE<2>      |ALU_OUT<6>     |   11.134|
+OPCODE<2>      |ALU_OUT<7>     |   10.540|
+OPCODE<2>      |CCR<0>         |    9.917|
+OPCODE<2>      |CCR<1>         |   10.152|
+OPCODE<2>      |CCR<2>         |   12.045|
+OPCODE<2>      |CCR<3>         |   10.803|
+OPCODE<3>      |ALU_OUT<0>     |   10.686|
+OPCODE<3>      |ALU_OUT<1>     |   11.749|
+OPCODE<3>      |ALU_OUT<2>     |    9.890|
+OPCODE<3>      |ALU_OUT<3>     |    9.673|
+OPCODE<3>      |ALU_OUT<4>     |   11.274|
+OPCODE<3>      |ALU_OUT<5>     |   10.734|
+OPCODE<3>      |ALU_OUT<6>     |   11.546|
+OPCODE<3>      |ALU_OUT<7>     |   10.094|
+OPCODE<3>      |CCR<0>         |    8.550|
+OPCODE<3>      |CCR<1>         |    9.125|
+OPCODE<3>      |CCR<2>         |   10.695|
+OPCODE<3>      |CCR<3>         |    8.574|
+RA<0>          |ALU_OUT<0>     |   11.724|
+RA<0>          |ALU_OUT<1>     |   11.542|
+RA<0>          |ALU_OUT<2>     |   11.071|
+RA<0>          |ALU_OUT<3>     |   11.633|
+RA<0>          |ALU_OUT<4>     |   11.606|
+RA<0>          |ALU_OUT<5>     |   12.039|
+RA<0>          |ALU_OUT<6>     |   11.168|
+RA<0>          |ALU_OUT<7>     |   10.988|
+RA<0>          |CCR<0>         |   10.063|
+RA<0>          |CCR<1>         |   10.298|
+RA<0>          |CCR<2>         |   12.191|
+RA<0>          |CCR<3>         |   10.949|
+RA<1>          |ALU_OUT<0>     |   10.182|
+RA<1>          |ALU_OUT<1>     |   11.006|
+RA<1>          |ALU_OUT<2>     |   10.784|
+RA<1>          |ALU_OUT<3>     |   11.346|
+RA<1>          |ALU_OUT<4>     |   11.843|
+RA<1>          |ALU_OUT<5>     |   11.752|
+RA<1>          |ALU_OUT<6>     |   10.788|
+RA<1>          |ALU_OUT<7>     |   11.794|
+RA<1>          |CCR<0>         |    9.776|
+RA<1>          |CCR<1>         |   10.011|
+RA<1>          |CCR<2>         |   11.904|
+RA<1>          |CCR<3>         |   10.662|
+RA<2>          |ALU_OUT<0>     |   10.704|
+RA<2>          |ALU_OUT<1>     |   10.193|
+RA<2>          |ALU_OUT<2>     |    9.506|
+RA<2>          |ALU_OUT<3>     |   11.033|
+RA<2>          |ALU_OUT<4>     |   11.136|
+RA<2>          |ALU_OUT<5>     |   10.920|
+RA<2>          |ALU_OUT<6>     |   11.119|
+RA<2>          |ALU_OUT<7>     |   10.939|
+RA<2>          |CCR<0>         |    8.944|
+RA<2>          |CCR<1>         |    9.179|
+RA<2>          |CCR<2>         |   10.800|
+RA<2>          |CCR<3>         |    9.830|
+RA<3>          |ALU_OUT<0>     |    9.613|
+RA<3>          |ALU_OUT<1>     |    8.154|
+RA<3>          |ALU_OUT<2>     |    8.622|
+RA<3>          |ALU_OUT<3>     |    9.707|
+RA<3>          |ALU_OUT<4>     |   10.437|
+RA<3>          |ALU_OUT<5>     |   10.634|
+RA<3>          |ALU_OUT<6>     |   10.242|
+RA<3>          |ALU_OUT<7>     |   10.388|
+RA<3>          |CCR<0>         |    8.658|
+RA<3>          |CCR<1>         |    8.893|
+RA<3>          |CCR<2>         |   10.476|
+RA<3>          |CCR<3>         |    9.544|
+RA<4>          |ALU_OUT<0>     |   10.414|
+RA<4>          |ALU_OUT<1>     |    9.221|
+RA<4>          |ALU_OUT<2>     |    9.295|
+RA<4>          |ALU_OUT<3>     |   10.185|
+RA<4>          |ALU_OUT<4>     |   11.126|
+RA<4>          |ALU_OUT<5>     |   11.733|
+RA<4>          |ALU_OUT<6>     |   11.064|
+RA<4>          |ALU_OUT<7>     |   11.522|
+RA<4>          |CCR<0>         |   10.029|
+RA<4>          |CCR<1>         |   10.264|
+RA<4>          |CCR<2>         |   11.336|
+RA<4>          |CCR<3>         |   10.915|
+RA<5>          |ALU_OUT<0>     |   11.009|
+RA<5>          |ALU_OUT<1>     |   10.850|
+RA<5>          |ALU_OUT<2>     |    9.391|
+RA<5>          |ALU_OUT<3>     |   10.004|
+RA<5>          |ALU_OUT<4>     |   11.983|
+RA<5>          |ALU_OUT<5>     |   10.916|
+RA<5>          |ALU_OUT<6>     |   11.085|
+RA<5>          |ALU_OUT<7>     |   10.749|
+RA<5>          |CCR<0>         |    9.461|
+RA<5>          |CCR<1>         |    9.696|
+RA<5>          |CCR<2>         |   10.768|
+RA<5>          |CCR<3>         |   10.347|
+RA<6>          |ALU_OUT<0>     |   10.802|
+RA<6>          |ALU_OUT<1>     |   10.291|
+RA<6>          |ALU_OUT<2>     |    8.836|
+RA<6>          |ALU_OUT<3>     |   10.421|
+RA<6>          |ALU_OUT<4>     |   11.078|
+RA<6>          |ALU_OUT<5>     |   10.090|
+RA<6>          |ALU_OUT<6>     |    9.830|
+RA<6>          |ALU_OUT<7>     |   10.534|
+RA<6>          |CCR<0>         |    9.285|
+RA<6>          |CCR<1>         |    9.248|
+RA<6>          |CCR<2>         |   10.320|
+RA<6>          |CCR<3>         |    9.899|
+RA<7>          |ALU_OUT<0>     |   10.136|
+RA<7>          |ALU_OUT<1>     |    9.977|
+RA<7>          |ALU_OUT<2>     |    8.579|
+RA<7>          |ALU_OUT<3>     |    9.201|
+RA<7>          |ALU_OUT<4>     |   11.110|
+RA<7>          |ALU_OUT<5>     |    9.488|
+RA<7>          |ALU_OUT<6>     |    8.814|
+RA<7>          |ALU_OUT<7>     |    9.248|
+RA<7>          |CCR<0>         |    8.344|
+RA<7>          |CCR<1>         |    8.279|
+RA<7>          |CCR<2>         |    9.130|
+RA<7>          |CCR<3>         |    8.709|
+RB<0>          |ALU_OUT<0>     |   10.481|
+RB<0>          |ALU_OUT<1>     |   11.488|
+RB<0>          |ALU_OUT<2>     |   10.363|
+RB<0>          |ALU_OUT<3>     |   11.170|
+RB<0>          |ALU_OUT<4>     |   12.005|
+RB<0>          |ALU_OUT<5>     |   11.076|
+RB<0>          |ALU_OUT<6>     |    9.765|
+RB<0>          |ALU_OUT<7>     |    9.880|
+RB<0>          |CCR<0>         |    8.551|
+RB<0>          |CCR<1>         |    8.786|
+RB<0>          |CCR<2>         |   10.679|
+RB<0>          |CCR<3>         |    9.437|
+RB<1>          |ALU_OUT<0>     |   11.707|
+RB<1>          |ALU_OUT<1>     |   11.548|
+RB<1>          |ALU_OUT<2>     |   10.789|
+RB<1>          |ALU_OUT<3>     |   11.539|
+RB<1>          |ALU_OUT<4>     |   12.681|
+RB<1>          |ALU_OUT<5>     |   11.826|
+RB<1>          |ALU_OUT<6>     |   11.047|
+RB<1>          |ALU_OUT<7>     |   11.558|
+RB<1>          |CCR<0>         |    8.756|
+RB<1>          |CCR<1>         |    8.991|
+RB<1>          |CCR<2>         |   10.884|
+RB<1>          |CCR<3>         |    9.642|
+RB<2>          |ALU_OUT<0>     |   11.562|
+RB<2>          |ALU_OUT<1>     |   11.758|
+RB<2>          |ALU_OUT<2>     |   10.560|
+RB<2>          |ALU_OUT<3>     |   11.440|
+RB<2>          |ALU_OUT<4>     |   12.222|
+RB<2>          |ALU_OUT<5>     |   11.805|
+RB<2>          |ALU_OUT<6>     |   10.820|
+RB<2>          |ALU_OUT<7>     |   10.493|
+RB<2>          |CCR<0>         |    9.829|
+RB<2>          |CCR<1>         |   10.064|
+RB<2>          |CCR<2>         |   11.685|
+RB<2>          |CCR<3>         |   10.715|
+RB<3>          |ALU_OUT<3>     |    9.437|
+RB<3>          |ALU_OUT<4>     |    9.931|
+RB<3>          |ALU_OUT<5>     |   10.364|
+RB<3>          |ALU_OUT<6>     |    9.379|
+RB<3>          |ALU_OUT<7>     |    9.011|
+RB<3>          |CCR<0>         |    8.388|
+RB<3>          |CCR<1>         |    8.623|
+RB<3>          |CCR<2>         |   10.251|
+RB<3>          |CCR<3>         |    9.274|
+RB<4>          |ALU_OUT<4>     |   10.479|
+RB<4>          |ALU_OUT<5>     |   11.086|
+RB<4>          |ALU_OUT<6>     |   10.373|
+RB<4>          |ALU_OUT<7>     |   10.005|
+RB<4>          |CCR<0>         |    9.382|
+RB<4>          |CCR<1>         |    9.617|
+RB<4>          |CCR<2>         |   10.689|
+RB<4>          |CCR<3>         |   10.268|
+RB<5>          |ALU_OUT<5>     |   10.097|
+RB<5>          |ALU_OUT<6>     |    9.633|
+RB<5>          |ALU_OUT<7>     |    9.265|
+RB<5>          |CCR<0>         |    8.642|
+RB<5>          |CCR<1>         |    8.877|
+RB<5>          |CCR<2>         |   10.205|
+RB<5>          |CCR<3>         |    9.528|
+RB<6>          |ALU_OUT<6>     |   10.152|
+RB<6>          |ALU_OUT<7>     |    9.668|
+RB<6>          |CCR<0>         |    9.317|
+RB<6>          |CCR<1>         |    9.280|
+RB<6>          |CCR<2>         |   10.352|
+RB<6>          |CCR<3>         |    9.931|
+RB<7>          |ALU_OUT<7>     |    9.721|
+RB<7>          |CCR<0>         |    9.185|
+RB<7>          |CCR<1>         |    9.120|
+RB<7>          |CCR<2>         |    9.971|
+RB<7>          |CCR<3>         |    9.550|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Feb 10 17:30:42 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 173 MB
+
+
+
