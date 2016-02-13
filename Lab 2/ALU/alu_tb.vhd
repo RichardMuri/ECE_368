@@ -84,10 +84,6 @@ BEGIN
         wait for 100 ns;
 
         report "Start ALU Test Bench" severity NOTE;
-		  
-		  ----- Miles' Tests -----
-		  
-		  ----- END Miles Tests -----
         
         ----- Register-Register Arithmetic Tests -----
         RA <= "00000101"; -- 5

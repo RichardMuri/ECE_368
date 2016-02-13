@@ -19,7 +19,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity Arith_Unit is
     Port ( A      : in  STD_LOGIC_VECTOR (7 downto 0);
            B      : in  STD_LOGIC_VECTOR (7 downto 0);
-           OP     : in  STD_LOGIC_VECTOR (2 downto 0);--3 downto 0?
+           OP     : in  STD_LOGIC_VECTOR (2 downto 0);
            CCR    : out STD_LOGIC_VECTOR (3 downto 0);
            RESULT : out STD_LOGIC_VECTOR  (7 downto 0));
 end Arith_Unit;
@@ -30,7 +30,7 @@ architecture Combinational of Arith_Unit is
     signal arith : STD_LOGIC_VECTOR (8 downto 0) := (OTHERS => '0');
 
 begin
-    -- Give extra bit to account for carry,overflow,negative
+    -- Give extra bit to accound for carry,overflow,negative
     a1 <= '0' & A;
     b1 <= '0' & B;
 
