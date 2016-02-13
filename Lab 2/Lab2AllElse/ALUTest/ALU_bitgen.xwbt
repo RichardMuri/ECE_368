@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\Projects\ALUTest\ALU.ncd
+OUTFILE=C:\Xilinx\Projects\ALUTest\ALU.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Xilinx\Projects\ALUTest
+LICENSE=WebPack
+USER_INFO=210948900_0_0_756

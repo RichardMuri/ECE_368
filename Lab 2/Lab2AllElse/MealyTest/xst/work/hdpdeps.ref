@@ -1,0 +1,39 @@
+V3 20
+FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk2Hz.vhd" 2016/02/10.14:11:08 P.20131013
+EN work/clk2Hz 1455308423 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk2Hz.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/clk2Hz/Behavioral 1455308424 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk2Hz.vhd" \
+      EN work/clk2Hz 1455308423
+FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk4Hz.vhd" 2016/02/12.15:20:03 P.20131013
+EN work/clk4Hz 1455308425 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk4Hz.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/clk4Hz/Behavioral 1455308426 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/clk4Hz.vhd" \
+      EN work/clk4Hz 1455308425
+FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter.vhd" 2016/02/10.14:11:08 P.20131013
+EN work/counter 1455308429 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter/Behavioral 1455308430 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter.vhd" \
+      EN work/counter 1455308429
+FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter_toplevel.vhd" 2016/02/10.14:11:08 P.20131013
+EN work/clock_toplevel 1455308431 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter_toplevel.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/clock_toplevel/Structural 1455308432 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/counter_toplevel.vhd" \
+      EN work/clock_toplevel 1455308431 CP work/clk2Hz CP work/clk4Hz \
+      CP work/mux_2to1 CP work/counter
+FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/mux_2to1.vhd" 2016/02/10.14:11:08 P.20131013
+EN work/mux_2to1 1455308427 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/mux_2to1.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux_2to1/Behavioral 1455308428 \
+      FL "C:/Users/Miles/Desktop/ECE368-Lab-master/ECE368-Lab-master/Lab 2/Counter/mux_2to1.vhd" \
+      EN work/mux_2to1 1455308427
