@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Xilinx/Projects/ALUTest/ALU_tb_vhd_isim_beh.exe" -prj "C:/Xilinx/Projects/ALUTest/ALU_tb_vhd_beh.prj" "work.ALU_tb_vhd" 
