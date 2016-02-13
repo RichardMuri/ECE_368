@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Xilinx\Projects\MealyTest\impact.xsl
+OUTFILE=C:\Xilinx\Projects\MealyTest\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Xilinx\Projects\MealyTest
+LICENSE=iMPACT
+USER_INFO=iMPACT

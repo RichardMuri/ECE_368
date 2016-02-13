@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\Projects\MealyTest\clock_toplevel.ncd
+OUTFILE=C:\Xilinx\Projects\MealyTest\clock_toplevel.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Xilinx\Projects\MealyTest
+LICENSE=WebPack
+USER_INFO=210948900_0_0_756
