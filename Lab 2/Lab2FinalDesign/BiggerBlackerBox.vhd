@@ -72,7 +72,7 @@ begin
 	regB : entity work.SIMPREG 
 	
 	port map( DIN		 =>	tempregb,
-				 DOUT		 => 	raout,
+				 DOUT		 => 	rbout,
 				 ENABLE   =>   en1,
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3));
@@ -80,7 +80,7 @@ begin
 	regop : entity work.SIMPREG 
 	
 	port map( DIN		 =>	tempregop,
-				 DOUT		 => 	raout,
+				 DOUT		 => 	opout,
 				 ENABLE   =>   en1,
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3));
