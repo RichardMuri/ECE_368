@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    01:10:05 02/14/2016 
+-- Create Date:    16:05:02 02/16/2016 
 -- Design Name: 
--- Module Name:    SwitchMux - Behavioral 
+-- Module Name:    RegisterMux - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,17 +29,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity SwitchMux is
+entity RegisterMux is
 
-	port( input : in STD_LOGIC_VECTOR(7 downto 0);
+port(    aout : in STD_LOGIC_VECTOR(7 downto 0);
+			bout : in STD_LOGIC_VECTOR(7 downto 0);
+			opout : in STD_LOGIC_VECTOR(7 downto 0);
+			aluout : in STD_LOGIC_VECTOR(7 downto 0);
 			sel   : in STD_LOGIC;
-			outp1 : out STD_LOGIC_VECTOR(7 downto 0);
-			outp2 : out STD_LOGIC_VECTOR(7 downto 0);
-			outp3 : out STD_LOGIC_VECTOR(7 downto 0));
-		
-end SwitchMux;
+			ssegout : out STD_LOGIC_VECTOR(7 downto 0));
 
-architecture Behavioral of SwitchMux is 
+end RegisterMux;
+
+architecture Behavioral of RegisterMux is
 
 signal temp : STD_LOGIC_VECTOR(1 downto 0):= "10";
 
@@ -48,24 +49,23 @@ begin
 	process(sel)
 	begin
 		if (sel'event and sel = '1') then
-		
-			if temp = "11" then 
+
+			if temp = "11" then
 				temp <= "00";
 			end if;
 
 			case (temp) is
 				when "00" =>
-					outp1 <= input;
+					ssegout <= aout;
 				when "01" =>
-					outp2 <= input;
+					ssegout <= bout;
 				when "10" =>
-					outp3 <= input;
+					ssegout <= opout;
 				when others =>
-					outp1 <= "00000000";
-					outp2 <= "00000000";
-					outp3 <= "00000000";
+					ssegout <= "00000000";
 			end case;
 		end if;
 	end process;
 
 end Behavioral;
+

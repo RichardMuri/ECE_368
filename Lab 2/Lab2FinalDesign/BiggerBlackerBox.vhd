@@ -42,13 +42,15 @@ end BiggerBlackerBox;
 
 architecture Behavioral of BiggerBlackerBox is
 
-signal temprega : STD_LOGIC_VECTOR(7 downto 0):=  (OTHERS => '0'); -- switch mux to register a
-signal tempregb : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- switch mux to register b
-signal tempregop : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- switch mux to opcode register
+signal ain : STD_LOGIC_VECTOR(7 downto 0):=  (OTHERS => '0'); -- switch mux to register a
+signal bin : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- switch mux to register b
+signal opin : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- switch mux to opcode register
 
-signal rbout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- register b to ALU
-signal raout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- resiter a to ALU
-signal opout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- opcode register to alu
+signal r_aout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- register a to ALU
+signal r_bout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- register b to ALU
+signal r_opout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- opcode register to alu
+signal r_aluout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- ALU result
+signal r_ssegout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- 
 
 signal en1 : STD_LOGIC := '1'; 
 
@@ -57,30 +59,38 @@ begin
 	switches : entity work.SwitchMux
 	port map( input => SW,
 				 sel 	 => BTN,
-				 outp1 => temprega,
-				 outp2 => tempregb,
-				 outp3 => tempregop);
+				 outp1 => ain,
+				 outp2 => bin,
+				 outp3 => opin);
+				 
+	regswitches : entity work.RegisterMux
+	port map( aout => r_aout,
+				 bout => r_bout,
+				 opout => r_opout,
+				 sel => BTN,
+				 aluout => r_aluout,
+				 ssegout => r_ssegout ); -- ?????
 
 	regA : entity work.SIMPREG 
 	
-	port map( DIN		 =>	temprega,
-				 DOUT		 => 	raout,
+	port map( DIN		 =>	ain,
+				 DOUT		 => 	r_aout,
 				 ENABLE   =>   en1,
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3)); 
 
 	regB : entity work.SIMPREG 
 	
-	port map( DIN		 =>	tempregb,
-				 DOUT		 => 	rbout,
+	port map( DIN		 =>	bin,
+				 DOUT		 => 	r_bout,
 				 ENABLE   =>   en1,
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3));
 				 
 	regop : entity work.SIMPREG 
 	
-	port map( DIN		 =>	tempregop,
-				 DOUT		 => 	opout,
+	port map( DIN		 =>	opin,
+				 DOUT		 => 	r_opout,
 				 ENABLE   =>   en1,
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3));
@@ -88,7 +98,7 @@ begin
 	sseg : entity work.SSeg_toplevel
 	
 	port map(CLK	=>	CLK, 
-				SW		=>	raout,
+				SW		=>	r_aout,
 				BTN	=>	BTN(3),
 				SEG	=>	SEG,
 				DP		=>	DP,

@@ -32,8 +32,8 @@ end SSeg_toplevel;
 
 architecture Structural of SSeg_toplevel is
 
-    signal s2  : STD_LOGIC_VECTOR (3 downto 0) := "1100";
-    signal s3  : STD_LOGIC_VECTOR (3 downto 0) := "1110";
+    signal s0  : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    signal s1  : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal enl : STD_LOGIC := '1';
     signal dpc : STD_LOGIC_VECTOR (3 downto 0) := "1111";
     signal cen : STD_LOGIC := '0';
@@ -45,10 +45,10 @@ begin
     port map( CLK     => CLK,
               RST     => BTN,
               EN      => enl,
-              SEG_0   => SW(3 downto 0),
-              SEG_1   => SW(7 downto 4),
-              SEG_2   => s2,
-              SEG_3   => s3,
+              SEG_0   => s0,
+              SEG_1   => s1,
+              SEG_2   => SW(7 downto 4),
+              SEG_3   => SW(3 downto 0),
               DP_CTRL => dpc,
               COL_EN  => cen,
               SEG_OUT => SEG,

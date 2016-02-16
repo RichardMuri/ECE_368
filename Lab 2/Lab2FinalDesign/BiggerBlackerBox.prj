@@ -1,5 +1,6 @@
 vhdl work "../SevenSegmentDisplay/SevenSeg.vhd"
 vhdl work "../SevenSegmentDisplay/SevenSeg_toplevel.vhd"
 vhdl work "SwitchMux.vhd"
+vhdl work "RegisterMux.vhd"
 vhdl work "reg.vhd"
 vhdl work "BiggerBlackerBox.vhd"
