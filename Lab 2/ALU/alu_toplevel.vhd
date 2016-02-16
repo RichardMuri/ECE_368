@@ -56,7 +56,7 @@ begin
     shift_unit: entity work.alu_shift_unit
     port map( A      => RA,
               COUNT  => RB(2 downto 0),
-              OP     => opcode(3),
+              OP     => opcode(3),--(3)
               RESULT => shift);
 
     Load_Store_Unit: entity work.Load_Store_Unit

@@ -36,6 +36,10 @@
     <transform xil_pn:end_ts="1455496640" xil_pn:in_ck="-5795918741519704725" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455496640">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../ALU/alu_arithmetic_unit.vhd"/>
       <outfile xil_pn:name="../ALU/alu_logic_unit.vhd"/>
       <outfile xil_pn:name="../ALU/alu_mux.vhd"/>
@@ -69,6 +73,11 @@
     <transform xil_pn:end_ts="1455496640" xil_pn:in_ck="-5795918741519704725" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455496640">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../ALU/alu_arithmetic_unit.vhd"/>
       <outfile xil_pn:name="../ALU/alu_logic_unit.vhd"/>
       <outfile xil_pn:name="../ALU/alu_mux.vhd"/>
@@ -90,7 +99,10 @@
     <transform xil_pn:end_ts="1455496649" xil_pn:in_ck="-5795918741519704725" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1023566287280750082" xil_pn:start_ts="1455496640">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU_tb_vhd_beh.prj"/>
       <outfile xil_pn:name="ALU_tb_vhd_isim_beh.exe"/>
@@ -102,6 +114,7 @@
     <transform xil_pn:end_ts="1455496650" xil_pn:in_ck="-5355031250265062105" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3034397407803597557" xil_pn:start_ts="1455496649">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU_tb_vhd_isim_beh.wdb"/>
