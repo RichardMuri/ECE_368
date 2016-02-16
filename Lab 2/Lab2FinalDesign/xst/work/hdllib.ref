@@ -1,0 +1,10 @@
+EN biggerblackerbox NULL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" sub00/vhpl04 1455649656
+AR biggerblackerbox behavioral "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" sub00/vhpl09 1455649657
+AR sseg_toplevel structural "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" sub00/vhpl03 1455649655
+EN sseg_toplevel NULL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" sub00/vhpl02 1455649654
+AR switchmux behavioral "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" sub00/vhpl06 1455649651
+AR ssegdriver behavioral "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" sub00/vhpl01 1455649649
+EN ssegdriver NULL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" sub00/vhpl00 1455649648
+EN switchmux NULL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" sub00/vhpl05 1455649650
+EN simpreg NULL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" sub00/vhpl07 1455649652
+AR simpreg simple "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" sub00/vhpl08 1455649653
