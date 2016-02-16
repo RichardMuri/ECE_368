@@ -1,0 +1,33 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/ALU_tb_vhd_isim_beh.exe -prj C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/ALU_tb_vhd_beh.prj work.ALU_tb_vhd 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/../ALU/load_store_unit.vhd" into library work
+Parsing VHDL file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/../ALU/alu_shift_unit.vhd" into library work
+Parsing VHDL file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/../ALU/alu_mux.vhd" into library work
+Parsing VHDL file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/../ALU/alu_logic_unit.vhd" into library work
+Parsing VHDL file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/../ALU/alu_arithmetic_unit.vhd" into library work
+Parsing VHDL file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/../ALU/alu_toplevel.vhd" into library work
+Parsing VHDL file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/../ALU/alu_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture combinational of entity Arith_Unit [arith_unit_default]
+Compiling architecture combinational of entity Logic_Unit [logic_unit_default]
+Compiling architecture combinational of entity ALU_Shift_Unit [alu_shift_unit_default]
+Compiling architecture behavioral of entity Load_Store_Unit [load_store_unit_default]
+Compiling architecture combinational of entity ALU_Mux [alu_mux_default]
+Compiling architecture structural of entity ALU [alu_default]
+Compiling architecture behavior of entity alu_tb_vhd
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\ALU_tb_vhd_isim_beh.exe.sim\libPortability.dll".
+Compiled 18 VHDL Units
+Built simulation executable C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/ALU_tb_vhd_isim_beh.exe
+Fuse Memory Usage: 37704 KB
+Fuse CPU Usage: 1687 ms

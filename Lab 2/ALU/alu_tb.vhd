@@ -102,6 +102,29 @@ BEGIN
         assert (ALU_OUT = 7)  report "Failed OR 1. ALU_OUT=" & integer'image(to_integer(unsigned(ALU_OUT))) severity ERROR;
         assert (CCR = "0000")  report "Failed OR 1 - CCR. CCR=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
         
+		  ----- Miles' Tests -----
+		  
+--		    RA <= "00000101"; -- 5
+--        RB <= "00000011"; -- 3
+--        
+        OPCODE <= "0101";  wait for period;
+        assert (ALU_OUT = 8)  report "Failed ADDIMMED. ALU_OUT=" & integer'image(to_integer(unsigned(ALU_OUT))) severity ERROR;
+        assert (CCR = "0000")  report "Failed ADDIMMED - CCR. CCR=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
+--        OPCODE <= "0001";  wait for period;
+--        assert (ALU_OUT = 2)  report "Failed SUB 1. ALU_OUT=" & integer'image(to_integer(unsigned(ALU_OUT))) severity ERROR;
+--        assert (CCR = "0000")  report "Failed SUB 1 - CCR. CCR=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
+        OPCODE <= "0110";  wait for period;
+        assert (ALU_OUT = 1) report "Failed ANDIMMED 1. ALU_OUT=" & integer'image(to_integer(unsigned(ALU_OUT))) severity ERROR;
+        assert (CCR = "0000")  report "Failed ANDIMMED 1 - CCR. CCR=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
+--        OPCODE <= "0011";  wait for period;
+--        assert (ALU_OUT = 7)  report "Failed OR 1. ALU_OUT=" & integer'image(to_integer(unsigned(ALU_OUT))) severity ERROR;
+--        assert (CCR = "0000")  report "Failed OR 1 - CCR. CCR=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
+		  
+		  ----- END Miles' Tests -----
+		  
+		  
+		  
+		  
         RA <= "01100100"; -- 100
         RB <= "00110010"; -- 50        
         
@@ -119,9 +142,9 @@ BEGIN
         assert (CCR = "0000")  report "Failed OR 2 - CCR. CCR=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
         
 		  
-		  
-		  
 		  ----- END Arithmetic Tests -----
+
+		  
         
         ----- CCR Tests -----
         RA <= "00000000"; 
@@ -165,8 +188,8 @@ BEGIN
         OPCODE <= "1010";  wait for period;
         assert (ALU_OUT = 0) report "Failed MEMORY WRITE ALU_OUT=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
         
-        OPCODE <= "1001";  wait for period;
-        assert (ALU_OUT = X"16") report "Failed MEMORY READ(2) ALU_OUT=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
+--        OPCODE <= "1001";  wait for period;
+--        assert (ALU_OUT = X"16") report "Failed MEMORY READ(2) ALU_OUT=" & integer'image(to_integer(unsigned(CCR))) severity ERROR;
         
         -- END Mem Test --
         

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-02-13T19:15:57</DateModified>
+  <DateModified>2016-02-16T11:39:26</DateModified>
   <ModuleName>BiggerBlackerBox</ModuleName>
-  <SummaryTimeStamp>2016-02-13T17:35:16</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/iseconfig/ALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign</ImplementationReportsDirectory>
-  <DateInitialized>2016-02-13T17:24:58</DateInitialized>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/iseconfig/BiggerBlackerBox.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign\</ImplementationReportsDirectory>
+  <DateInitialized>2016-02-13T19:24:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

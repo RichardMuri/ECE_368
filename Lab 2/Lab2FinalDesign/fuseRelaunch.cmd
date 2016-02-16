@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/ALU_tb_vhd_isim_beh.exe" -prj "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/ALU_tb_vhd_beh.prj" "work.ALU_tb_vhd" 

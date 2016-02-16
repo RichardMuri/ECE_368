@@ -30,7 +30,7 @@ architecture Combinational of Arith_Unit is
     signal arith : STD_LOGIC_VECTOR (8 downto 0) := (OTHERS => '0');
 
 begin
-    -- Give extra bit to accound for carry,overflow,negative
+    -- Give extra bit to account for carry,overflow,negative
     a1 <= '0' & A;
     b1 <= '0' & B;
 
