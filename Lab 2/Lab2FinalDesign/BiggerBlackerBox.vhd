@@ -50,15 +50,19 @@ signal r_aout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- register a to
 signal r_bout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- register b to ALU
 signal r_opout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- opcode register to alu
 signal r_aluout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- ALU result
-signal r_ssegout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- 
+signal r_muxout : STD_LOGIC_VECTOR(7 downto 0):= (OTHERS => '0'); -- 
 
-signal en1 : STD_LOGIC := '1'; 
+signal ldst	:	STD_LOGIC_VECTOR(7 downto 0):=	(OTHERS => '0');
+signal ccr_out :	STD_LOGIC_VECTOR(3 downto 0):=	(OTHERS	=> '0');
+
+signal en1 : STD_LOGIC := '1';
+signal en0 : STD_LOGIC := '0'; 
 
 begin
 
 	switches : entity work.SwitchMux
 	port map( input => SW,
-				 sel 	 => BTN,
+				 sel 	 => BTN(0),
 				 outp1 => ain,
 				 outp2 => bin,
 				 outp3 => opin);
@@ -67,15 +71,15 @@ begin
 	port map( aout => r_aout,
 				 bout => r_bout,
 				 opout => r_opout,
-				 sel => BTN,
+				 sel => BTN(0),
 				 aluout => r_aluout,
-				 ssegout => r_ssegout ); -- ?????
+				 regmuxout => r_muxout ); -- ?????
 
 	regA : entity work.SIMPREG 
 	
 	port map( DIN		 =>	ain,
 				 DOUT		 => 	r_aout,
-				 ENABLE   =>   en1,
+				 ENABLE   =>   BTN(1),
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3)); 
 
@@ -83,7 +87,7 @@ begin
 	
 	port map( DIN		 =>	bin,
 				 DOUT		 => 	r_bout,
-				 ENABLE   =>   en1,
+				 ENABLE   =>   BTN(1),
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3));
 				 
@@ -91,18 +95,28 @@ begin
 	
 	port map( DIN		 =>	opin,
 				 DOUT		 => 	r_opout,
-				 ENABLE   =>   en1,
+				 ENABLE   =>   BTN(1),
 				 CLK      =>   CLK,
 				 RESET    =>   BTN(3));
 				 
 	sseg : entity work.SSeg_toplevel
 	
 	port map(CLK	=>	CLK, 
-				SW		=>	r_aout,
+				SW		=>	r_muxout,
 				BTN	=>	BTN(3),
 				SEG	=>	SEG,
 				DP		=>	DP,
 				AN		=>	AN);
+				
+	alu : entity work.ALU
+	
+	port map(CLK		=>	CLK,
+				RA			=>	r_aout,
+				RB			=>	r_bout,
+				OPCODE	=>	r_opout(3 downto 0),
+				CCR		=>	ccr_out,
+				ALU_OUT	=>	r_alout,
+				LDST_OUT =>	ldst);
 
 end Behavioral;
 

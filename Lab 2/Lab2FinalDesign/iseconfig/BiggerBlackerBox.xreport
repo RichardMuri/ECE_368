@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <ImplementationReportsDirectory>C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign\</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign\</ImplementationReportsDirectory>
   <ModuleName>BiggerBlackerBox</ModuleName>
-  <DateModified>2016-02-16T17:15:11</DateModified>
-  <SavedFilePath>C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/iseconfig/BiggerBlackerBox.xreport</SavedFilePath>
+  <DateModified>2016-02-16T23:45:28</DateModified>
+  <SavedFilePath>C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/iseconfig/BiggerBlackerBox.xreport</SavedFilePath>
   <DateInitialized>2016-02-16T14:19:02</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
+  <SummaryTimeStamp>2016-02-16T23:36:38</SummaryTimeStamp>
  </header>
 </report-views>

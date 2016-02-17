@@ -26,7 +26,7 @@ end Logic_Unit;
 
 architecture Combinational of Logic_Unit is
 
-    signal cmp: STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
+    signal cmp: STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0'); -------CHANGED THIS 
 
 begin
 

@@ -19,6 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -36,33 +38,35 @@ port(    aout : in STD_LOGIC_VECTOR(7 downto 0);
 			opout : in STD_LOGIC_VECTOR(7 downto 0);
 			aluout : in STD_LOGIC_VECTOR(7 downto 0);
 			sel   : in STD_LOGIC;
-			ssegout : out STD_LOGIC_VECTOR(7 downto 0));
+			regmuxout : out STD_LOGIC_VECTOR(7 downto 0));
 
 end RegisterMux;
 
 architecture Behavioral of RegisterMux is
 
-signal temp : STD_LOGIC_VECTOR(1 downto 0):= "10";
+signal temp : STD_LOGIC_VECTOR(1 downto 0):= "11";
 
 begin
 
 	process(sel)
 	begin
 		if (sel'event and sel = '1') then
-
-			if temp = "11" then
-				temp <= "00";
-			end if;
-
+			
+			temp <=  temp + "01" ;
+			
 			case (temp) is
 				when "00" =>
-					ssegout <= aout;
+					regmuxout <= aout;
 				when "01" =>
-					ssegout <= bout;
+					regmuxout <= bout;
 				when "10" =>
-					ssegout <= opout;
+					regmuxout <= opout;
+				when "11" =>
+					regmuxout <= aluout;
 				when others =>
-					ssegout <= "00000000";
+					regmuxout <= "00000000";
+					
+			
 			end case;
 		end if;
 	end process;

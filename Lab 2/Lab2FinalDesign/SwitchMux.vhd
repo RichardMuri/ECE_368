@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -48,11 +49,10 @@ begin
 	process(sel)
 	begin
 		if (sel'event and sel = '1') then
-		
-			if temp = "11" then 
-				temp <= "00";
-			end if;
-
+			
+			
+			temp <= std_logic_vector( unsigned(temp) + 1 );
+			
 			case (temp) is
 				when "00" =>
 					outp1 <= input;
@@ -60,12 +60,13 @@ begin
 					outp2 <= input;
 				when "10" =>
 					outp3 <= input;
+				when "11" =>
 				when others =>
 					outp1 <= "00000000";
 					outp2 <= "00000000";
-					outp3 <= "00000000";
+					outp3 <= "00000000";					
+			
 			end case;
 		end if;
 	end process;
-
 end Behavioral;
