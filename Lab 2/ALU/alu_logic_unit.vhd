@@ -20,13 +20,13 @@ entity Logic_Unit is
     Port ( A      : in  STD_LOGIC_VECTOR (7 downto 0);
            B      : in  STD_LOGIC_VECTOR (7 downto 0);
            OP     : in  STD_LOGIC_VECTOR (2 downto 0);
-           CCR    : out STD_LOGIC_VECTOR (3 downto 0);
+           CCR    : out STD_LOGIC_VECTOR (3 downto 0);	--7-0?
            RESULT : out STD_LOGIC_VECTOR  (7 downto 0));
 end Logic_Unit;
 
 architecture Combinational of Logic_Unit is
 
-    signal cmp: STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0'); -------CHANGED THIS 
+    signal cmp: STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0'); -------CHANGED THIS 7-0?
 
 begin
 
@@ -34,7 +34,7 @@ begin
         RESULT <=
             A and B when "010", -- AND  REG A, REG B
             A or  B when "011", -- OR   REG A, REG B
-            cmp when "100", -- CMP  REG A, REG B
+            "00000000" when "100", -- CMP  REG A, REG B  CHANGED THIS (was cmp) not 00000000
             A and B when OTHERS;-- ANDI REG A, IMMED
 
     --Compare Operation

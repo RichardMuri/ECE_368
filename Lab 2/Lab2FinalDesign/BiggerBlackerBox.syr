@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: BiggerBlackerBox.prj
 
@@ -104,17 +104,590 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" in Library work.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" in Library work.
 Architecture combinational of Entity arith_unit is up to date.
-Compiling vhdl file "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" in Library work.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" in Library work.
 Entity <logic_unit> compiled.
-ERROR:HDLParsers:837 - "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" Line 37. Width mismatch. Expected width 8, Actual width is 4 for dimension 1 of cmp.
-ERROR:HDLParsers:837 - "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" Line 37. Width mismatch. Expected width 8, Actual width is 4 for dimension 1 of cmp.
+Entity <logic_unit> (Architecture <combinational>) compiled.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" in Library work.
+Architecture combinational of Entity alu_shift_unit is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/load_store_unit.vhd" in Library work.
+Architecture behavioral of Entity load_store_unit is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_mux.vhd" in Library work.
+Architecture combinational of Entity alu_mux is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" in Library work.
+Architecture behavioral of Entity ssegdriver is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" in Library work.
+Architecture behavioral of Entity switchmux is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" in Library work.
+Architecture behavioral of Entity registermux is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" in Library work.
+Architecture simple of Entity simpreg is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" in Library work.
+Architecture structural of Entity sseg_toplevel is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_toplevel.vhd" in Library work.
+Architecture structural of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" in Library work.
+Architecture behavioral of Entity biggerblackerbox is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <BiggerBlackerBox> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SwitchMux> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RegisterMux> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <SIMPREG> in library <work> (architecture <SIMPLE>).
+
+Analyzing hierarchy for entity <SSeg_toplevel> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <SSegDriver> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Arith_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Logic_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <ALU_Shift_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Load_Store_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ALU_Mux> in library <work> (architecture <Combinational>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <BiggerBlackerBox> in library <work> (Architecture <behavioral>).
+Entity <BiggerBlackerBox> analyzed. Unit <BiggerBlackerBox> generated.
+
+Analyzing Entity <SwitchMux> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" line 62: Mux is complete : default of case is discarded
+Entity <SwitchMux> analyzed. Unit <SwitchMux> generated.
+
+Analyzing Entity <RegisterMux> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" line 65: Mux is complete : default of case is discarded
+Entity <RegisterMux> analyzed. Unit <RegisterMux> generated.
+
+Analyzing Entity <SIMPREG> in library <work> (Architecture <SIMPLE>).
+Entity <SIMPREG> analyzed. Unit <SIMPREG> generated.
+
+Analyzing Entity <SSeg_toplevel> in library <work> (Architecture <Structural>).
+Entity <SSeg_toplevel> analyzed. Unit <SSeg_toplevel> generated.
+
+Analyzing Entity <SSegDriver> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" line 98: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk240hz>
+INFO:Xst:1561 - "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" line 120: Mux is complete : default of case is discarded
+Entity <SSegDriver> analyzed. Unit <SSegDriver> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <Structural>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Arith_Unit> in library <work> (Architecture <Combinational>).
+Entity <Arith_Unit> analyzed. Unit <Arith_Unit> generated.
+
+Analyzing Entity <Logic_Unit> in library <work> (Architecture <Combinational>).
+Entity <Logic_Unit> analyzed. Unit <Logic_Unit> generated.
+
+Analyzing Entity <ALU_Shift_Unit> in library <work> (Architecture <Combinational>).
+Entity <ALU_Shift_Unit> analyzed. Unit <ALU_Shift_Unit> generated.
+
+Analyzing Entity <Load_Store_Unit> in library <work> (Architecture <Behavioral>).
+Entity <Load_Store_Unit> analyzed. Unit <Load_Store_Unit> generated.
+
+Analyzing Entity <ALU_Mux> in library <work> (Architecture <Combinational>).
+Entity <ALU_Mux> analyzed. Unit <ALU_Mux> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SwitchMux>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd".
+    Found 8-bit register for signal <outp1>.
+    Found 8-bit register for signal <outp2>.
+    Found 8-bit register for signal <outp3>.
+    Found 2-bit up counter for signal <temp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  24 D-type flip-flop(s).
+Unit <SwitchMux> synthesized.
+
+
+Synthesizing Unit <RegisterMux>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd".
+    Found 8-bit register for signal <regmuxout>.
+    Found 8-bit 4-to-1 multiplexer for signal <regmuxout$mux0001> created at line 57.
+    Found 2-bit up counter for signal <temp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <RegisterMux> synthesized.
+
+
+Synthesizing Unit <SIMPREG>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd".
+    Found 8-bit register for signal <DOUT>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <SIMPREG> synthesized.
+
+
+Synthesizing Unit <SSegDriver>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd".
+WARNING:Xst:647 - Input <COL_EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x7-bit ROM for signal <segnum>.
+    Found 4x4-bit ROM for signal <AN_OUT$mux0001> created at line 104.
+    Found 4-bit register for signal <AN_OUT>.
+    Found 1-bit register for signal <DP_OUT>.
+    Found 1-bit register for signal <clk240hz>.
+    Found 17-bit up counter for signal <count240hz>.
+    Found 1-bit 4-to-1 multiplexer for signal <DP_OUT$mux0001> created at line 104.
+    Found 4-bit register for signal <hexnum>.
+    Found 4-bit 4-to-1 multiplexer for signal <hexnum$mux0001> created at line 104.
+    Found 2-bit up counter for signal <pos>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   2 Counter(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <SSegDriver> synthesized.
+
+
+Synthesizing Unit <Arith_Unit>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd".
+    Found 1-bit xor2 for signal <CCR<1>>.
+    Found 9-bit addsub for signal <arith>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Arith_Unit> synthesized.
+
+
+Synthesizing Unit <Logic_Unit>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_logic_unit.vhd".
+WARNING:Xst:653 - Signal <cmp<1:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+    Found 8-bit comparator equal for signal <cmp_2$cmp_eq0000> created at line 42.
+    Found 8-bit comparator less for signal <cmp_3$cmp_lt0000> created at line 41.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <Logic_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Shift_Unit>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_shift_unit.vhd".
+    Found 8-bit shifter logical left for signal <shift_left>.
+    Found 8-bit shifter logical right for signal <shift_right>.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU_Shift_Unit> synthesized.
+
+
+Synthesizing Unit <Load_Store_Unit>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/load_store_unit.vhd".
+WARNING:Xst:647 - Input <IMMED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Load_Store_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Mux>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_mux.vhd".
+Unit <ALU_Mux> synthesized.
+
+
+Synthesizing Unit <SSeg_toplevel>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd".
+WARNING:Xst:653 - Signal <s1> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <s0> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <enl> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <dpc> is used but never assigned. This sourceless signal will be automatically connected to value 1111.
+WARNING:Xst:653 - Signal <cen> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <SSeg_toplevel> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_toplevel.vhd".
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <BiggerBlackerBox>.
+    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd".
+WARNING:Xst:647 - Input <BTN<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <ldst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ccr_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <BiggerBlackerBox> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 4
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 3
+# Registers                                            : 12
+ 1-bit register                                        : 2
+ 4-bit register                                        : 2
+ 8-bit register                                        : 8
+# Comparators                                          : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 3
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 4
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 3
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+# Comparators                                          : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 3
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <DP_OUT> (without init value) has a constant value of 1 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <BiggerBlackerBox> ...
+
+Optimizing unit <SwitchMux> ...
+
+Optimizing unit <RegisterMux> ...
+
+Optimizing unit <SIMPREG> ...
+
+Optimizing unit <SSegDriver> ...
+
+Optimizing unit <Load_Store_Unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BiggerBlackerBox, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : BiggerBlackerBox.ngr
+Top Level Output File Name         : BiggerBlackerBox
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 251
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 16
+#      LUT2                        : 37
+#      LUT3                        : 36
+#      LUT4                        : 84
+#      MUXCY                       : 28
+#      MUXF5                       : 19
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 96
+#      FD                          : 10
+#      FDC                         : 10
+#      FDCE                        : 42
+#      FDE                         : 32
+#      FDR                         : 2
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 22
+#      IBUF                        : 10
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       98  out of   4656     2%  
+ Number of Slice Flip Flops:             96  out of   9312     1%  
+ Number of 4 input LUTs:                177  out of   9312     1%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  24  out of    232    10%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+BTN<0>                             | BUFGP                  | 36    |
+CLK                                | BUFGP                  | 50    |
+sseg/SSeg/clk240hz                 | NONE(sseg/SSeg/pos_1)  | 10    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+BTN<3>                             | IBUF                   | 52    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.522ns (Maximum Frequency: 181.094MHz)
+   Minimum input arrival time before clock: 3.025ns
+   Maximum output required time after clock: 5.870ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BTN<0>'
+  Clock period: 3.415ns (frequency: 292.826MHz)
+  Total number of paths / destination ports: 78 / 36
+-------------------------------------------------------------------------
+Delay:               3.415ns (Levels of Logic = 1)
+  Source:            switches/temp_0 (FF)
+  Destination:       switches/outp2_7 (FF)
+  Source Clock:      BTN<0> rising
+  Destination Clock: BTN<0> rising
+
+  Data Path: switches/temp_0 to switches/outp2_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  switches/temp_0 (switches/temp_0)
+     LUT2:I0->O            8   0.704   0.757  switches/outp2_cmp_eq00001 (switches/outp2_cmp_eq0000)
+     FDE:CE                    0.555          switches/outp2_0
+    ----------------------------------------
+    Total                      3.415ns (1.850ns logic, 1.565ns route)
+                                       (54.2% logic, 45.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sseg/SSeg/clk240hz'
+  Clock period: 2.905ns (frequency: 344.234MHz)
+  Total number of paths / destination ports: 19 / 10
+-------------------------------------------------------------------------
+Delay:               2.905ns (Levels of Logic = 1)
+  Source:            sseg/SSeg/pos_0 (FF)
+  Destination:       sseg/SSeg/pos_0 (FF)
+  Source Clock:      sseg/SSeg/clk240hz rising
+  Destination Clock: sseg/SSeg/clk240hz rising
+
+  Data Path: sseg/SSeg/pos_0 to sseg/SSeg/pos_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.591   0.882  sseg/SSeg/pos_0 (sseg/SSeg/pos_0)
+     INV:I->O              1   0.704   0.420  sseg/SSeg/Mcount_pos_xor<0>11_INV_0 (sseg/SSeg/Mcount_pos)
+     FDC:D                     0.308          sseg/SSeg/pos_0
+    ----------------------------------------
+    Total                      2.905ns (1.603ns logic, 1.302ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.522ns (frequency: 181.094MHz)
+  Total number of paths / destination ports: 500 / 35
+-------------------------------------------------------------------------
+Delay:               5.522ns (Levels of Logic = 18)
+  Source:            sseg/SSeg/count240hz_1 (FF)
+  Destination:       sseg/SSeg/count240hz_16 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: sseg/SSeg/count240hz_1 to sseg/SSeg/count240hz_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  sseg/SSeg/count240hz_1 (sseg/SSeg/count240hz_1)
+     LUT1:I0->O            1   0.704   0.000  sseg/SSeg/Mcount_count240hz_cy<1>_rt (sseg/SSeg/Mcount_count240hz_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  sseg/SSeg/Mcount_count240hz_cy<1> (sseg/SSeg/Mcount_count240hz_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<2> (sseg/SSeg/Mcount_count240hz_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<3> (sseg/SSeg/Mcount_count240hz_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<4> (sseg/SSeg/Mcount_count240hz_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<5> (sseg/SSeg/Mcount_count240hz_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<6> (sseg/SSeg/Mcount_count240hz_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<7> (sseg/SSeg/Mcount_count240hz_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<8> (sseg/SSeg/Mcount_count240hz_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<9> (sseg/SSeg/Mcount_count240hz_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<10> (sseg/SSeg/Mcount_count240hz_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<11> (sseg/SSeg/Mcount_count240hz_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<12> (sseg/SSeg/Mcount_count240hz_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<13> (sseg/SSeg/Mcount_count240hz_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<14> (sseg/SSeg/Mcount_count240hz_cy<14>)
+     MUXCY:CI->O           0   0.059   0.000  sseg/SSeg/Mcount_count240hz_cy<15> (sseg/SSeg/Mcount_count240hz_cy<15>)
+     XORCY:CI->O           1   0.804   0.499  sseg/SSeg/Mcount_count240hz_xor<16> (sseg/SSeg/Result<16>)
+     LUT2:I1->O            1   0.704   0.000  sseg/SSeg/Mcount_count240hz_eqn_161 (sseg/SSeg/Mcount_count240hz_eqn_16)
+     FDCE:D                    0.308          sseg/SSeg/count240hz_16
+    ----------------------------------------
+    Total                      5.522ns (4.401ns logic, 1.121ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BTN<0>'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              2.057ns (Levels of Logic = 1)
+  Source:            SW<7> (PAD)
+  Destination:       switches/outp3_7 (FF)
+  Destination Clock: BTN<0> rising
+
+  Data Path: SW<7> to switches/outp3_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  SW_7_IBUF (SW_7_IBUF)
+     FDE:D                     0.308          switches/outp1_7
+    ----------------------------------------
+    Total                      2.057ns (1.526ns logic, 0.531ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.025ns (Levels of Logic = 1)
+  Source:            BTN<1> (PAD)
+  Destination:       regop/DOUT_7 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BTN<1> to regop/DOUT_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.218   1.252  BTN_1_IBUF (BTN_1_IBUF)
+     FDCE:CE                   0.555          regop/DOUT_0
+    ----------------------------------------
+    Total                      3.025ns (1.773ns logic, 1.252ns route)
+                                       (58.6% logic, 41.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sseg/SSeg/clk240hz'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.870ns (Levels of Logic = 2)
+  Source:            sseg/SSeg/hexnum_1 (FF)
+  Destination:       SEG<6> (PAD)
+  Source Clock:      sseg/SSeg/clk240hz rising
+
+  Data Path: sseg/SSeg/hexnum_1 to SEG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.883  sseg/SSeg/hexnum_1 (sseg/SSeg/hexnum_1)
+     LUT4:I0->O            1   0.704   0.420  sseg/SSeg/Mrom_segnum21 (SEG_2_OBUF)
+     OBUF:I->O                 3.272          SEG_2_OBUF (SEG<2>)
+    ----------------------------------------
+    Total                      5.870ns (4.567ns logic, 1.303ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.37 secs
+ 
 --> 
 
-Total memory usage is 232428 kilobytes
+Total memory usage is 306408 kilobytes
 
-Number of errors   :    2 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

@@ -1,4 +1,98 @@
-V3 60
+V3 72
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/Arith_Unit 1455734533 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Arith_Unit/Combinational 1455734534 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" \
+      EN work/Arith_Unit 1455734533
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" 2016/02/17.13:42:11 P.20131013
+EN work/Logic_Unit 1455734535 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Logic_Unit/Combinational 1455734536 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" \
+      EN work/Logic_Unit 1455734535
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_mux.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/ALU_Mux 1455734541 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_mux.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU_Mux/Combinational 1455734542 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_mux.vhd" EN work/ALU_Mux 1455734541
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/ALU_Shift_Unit 1455734537 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU_Shift_Unit/Combinational 1455734538 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" \
+      EN work/ALU_Shift_Unit 1455734537
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_toplevel.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/ALU 1455734553 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_toplevel.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ALU/Structural 1455734554 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_toplevel.vhd" EN work/ALU 1455734553 \
+      CP work/Arith_Unit CP work/Logic_Unit CP work/alu_shift_unit \
+      CP work/Load_Store_Unit CP work/ALU_Mux
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/load_store_unit.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/Load_Store_Unit 1455734539 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/load_store_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Load_Store_Unit/Behavioral 1455734540 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/load_store_unit.vhd" \
+      EN work/Load_Store_Unit 1455734539
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" 2016/02/17.13:33:56 P.20131013
+EN work/BiggerBlackerBox 1455734555 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/BiggerBlackerBox/Behavioral 1455734556 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" \
+      EN work/BiggerBlackerBox 1455734555 CP work/SwitchMux CP work/RegisterMux \
+      CP work/SIMPREG CP work/SSeg_toplevel CP work/ALU
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/SIMPREG 1455734549 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SIMPREG/SIMPLE 1455734550 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" \
+      EN work/SIMPREG 1455734549
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/RegisterMux 1455734547 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/RegisterMux/Behavioral 1455734548 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" \
+      EN work/RegisterMux 1455734547
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" 2016/02/17.13:10:00 P.20131013
+EN work/SwitchMux 1455734545 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/SwitchMux/Behavioral 1455734546 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" \
+      EN work/SwitchMux 1455734545
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" 2016/02/17.13:10:01 P.20131013
+EN work/SSegDriver 1455734543 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSegDriver/Behavioral 1455734544 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" \
+      EN work/SSegDriver 1455734543
+FL "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" 2016/02/17.13:10:01 P.20131013
+EN work/SSeg_toplevel 1455734551 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/SSeg_toplevel/Structural 1455734552 \
+      FL "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" \
+      EN work/SSeg_toplevel 1455734551 CP work/SSegDriver
 FL "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/load_store_unit.vhd" 2016/02/10.14:11:07 P.20131013
 FL "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" 2016/02/16.15:12:28 P.20131013
 FL "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" 2016/02/16.14:11:19 P.20131013
@@ -12,97 +106,14 @@ FL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/Lab
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" 2016/02/16.14:02:25 P.20131013
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE368/ECE_368/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" 2016/02/16.14:02:25 P.20131013
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" 2016/02/16.22:04:00 P.20131013
-EN work/Arith_Unit 1455684809 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Arith_Unit/Combinational 1455684810 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" \
-      EN work/Arith_Unit 1455684809
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" 2016/02/16.22:04:00 P.20131013
-EN work/Logic_Unit 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Logic_Unit/Combinational 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" \
-      EN work/Logic_Unit 0
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_mux.vhd" 2016/02/16.22:04:00 P.20131013
-EN work/ALU_Mux 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_mux.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ALU_Mux/Combinational 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_mux.vhd" \
-      EN work/ALU_Mux 0
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" 2016/02/16.22:04:00 P.20131013
-EN work/ALU_Shift_Unit 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ALU_Shift_Unit/Combinational 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" \
-      EN work/ALU_Shift_Unit 0
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_toplevel.vhd" 2016/02/16.22:04:00 P.20131013
-EN work/ALU 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_toplevel.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
-AR work/ALU/Structural 0 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/alu_toplevel.vhd" \
-      EN work/ALU 0 CP work/Arith_Unit CP work/Logic_Unit CP work/alu_shift_unit \
-      CP work/Load_Store_Unit CP work/ALU_Mux
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/load_store_unit.vhd" 2016/02/16.22:04:00 P.20131013
-EN work/Load_Store_Unit 1455661249 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/load_store_unit.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Load_Store_Unit/Behavioral 1455661250 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/ALU/load_store_unit.vhd" \
-      EN work/Load_Store_Unit 1455661249
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" 2016/02/16.23:34:46 P.20131013
-EN work/BiggerBlackerBox 1455683803 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" \
-      PB ieee/std_logic_1164 1381692176
-AR work/BiggerBlackerBox/Behavioral 1455683804 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" \
-      EN work/BiggerBlackerBox 1455683803 CP work/SwitchMux CP work/RegisterMux \
-      CP work/SIMPREG CP work/SSeg_toplevel CP work/ALU
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" 2016/02/16.22:04:00 P.20131013
-EN work/SIMPREG 1455683799 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" \
-      PB ieee/std_logic_1164 1381692176
-AR work/SIMPREG/SIMPLE 1455683800 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" \
-      EN work/SIMPREG 1455683799
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" 2016/02/16.23:34:16 P.20131013
-EN work/RegisterMux 1455683797 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/RegisterMux/Behavioral 1455683798 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" \
-      EN work/RegisterMux 1455683797
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" 2016/02/16.23:36:26 P.20131013
-EN work/SwitchMux 1455683795 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/SwitchMux/Behavioral 1455683796 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" \
-      EN work/SwitchMux 1455683795
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" 2016/02/16.22:04:01 P.20131013
-EN work/SSegDriver 1455683793 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/SSegDriver/Behavioral 1455683794 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" \
-      EN work/SSegDriver 1455683793
 FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" 2016/02/16.22:04:01 P.20131013
-EN work/SSeg_toplevel 1455683801 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
-AR work/SSeg_toplevel/Structural 1455683802 \
-      FL "C:/Users/Richard/Desktop/School/Engineering/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" \
-      EN work/SSeg_toplevel 1455683801 CP work/SSegDriver

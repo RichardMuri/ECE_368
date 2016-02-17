@@ -115,7 +115,7 @@ begin
 				RB			=>	r_bout,
 				OPCODE	=>	r_opout(3 downto 0),
 				CCR		=>	ccr_out,
-				ALU_OUT	=>	r_alout,
+				ALU_OUT	=>	r_aluout,
 				LDST_OUT =>	ldst);
 
 end Behavioral;
