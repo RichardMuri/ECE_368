@@ -36,7 +36,8 @@ entity BiggerBlackerBox is
 			BTN	: in  STD_LOGIC_VECTOR(3 downto 0); -- four push buttons control muxes
 			SEG   : out STD_LOGIC_VECTOR (6 downto 0); -- outputs for seven seg display
          DP    : out STD_LOGIC;
-         AN    : out STD_LOGIC_VECTOR (3 downto 0));
+         AN    : out STD_LOGIC_VECTOR (3 downto 0);
+			LED	: out	STD_LOGIC_VECTOR (7 downto 0));
 
 end BiggerBlackerBox;
 
@@ -65,7 +66,8 @@ begin
 				 sel 	 => BTN(0),
 				 outp1 => ain,
 				 outp2 => bin,
-				 outp3 => opin);
+				 outp3 => opin,
+				 LEDOUT => LED );
 				 
 	regswitches : entity work.RegisterMux
 	port map( aout => r_aout,
@@ -73,7 +75,7 @@ begin
 				 opout => r_opout,
 				 sel => BTN(0),
 				 aluout => r_aluout,
-				 regmuxout => r_muxout ); -- ?????
+				 regmuxout => r_muxout );
 
 	regA : entity work.SIMPREG 
 	

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Reading design: BiggerBlackerBox.prj
 
@@ -104,31 +104,32 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd" in Library work.
 Architecture combinational of Entity arith_unit is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" in Library work.
-Entity <logic_unit> compiled.
-Entity <logic_unit> (Architecture <combinational>) compiled.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_logic_unit.vhd" in Library work.
+Architecture combinational of Entity logic_unit is up to date.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_shift_unit.vhd" in Library work.
 Architecture combinational of Entity alu_shift_unit is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/load_store_unit.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/load_store_unit.vhd" in Library work.
 Architecture behavioral of Entity load_store_unit is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_mux.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_mux.vhd" in Library work.
 Architecture combinational of Entity alu_mux is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" in Library work.
 Architecture behavioral of Entity ssegdriver is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" in Library work.
-Architecture behavioral of Entity switchmux is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" in Library work.
+Entity <switchmux> compiled.
+Entity <switchmux> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" in Library work.
 Architecture behavioral of Entity registermux is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd" in Library work.
 Architecture simple of Entity simpreg is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd" in Library work.
 Architecture structural of Entity sseg_toplevel is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_toplevel.vhd" in Library work.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_toplevel.vhd" in Library work.
 Architecture structural of Entity alu is up to date.
-Compiling vhdl file "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" in Library work.
-Architecture behavioral of Entity biggerblackerbox is up to date.
+Compiling vhdl file "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd" in Library work.
+Entity <biggerblackerbox> compiled.
+Entity <biggerblackerbox> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -165,11 +166,11 @@ Analyzing Entity <BiggerBlackerBox> in library <work> (Architecture <behavioral>
 Entity <BiggerBlackerBox> analyzed. Unit <BiggerBlackerBox> generated.
 
 Analyzing Entity <SwitchMux> in library <work> (Architecture <Behavioral>).
-INFO:Xst:1561 - "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" line 62: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd" line 68: Mux is complete : default of case is discarded
 Entity <SwitchMux> analyzed. Unit <SwitchMux> generated.
 
 Analyzing Entity <RegisterMux> in library <work> (Architecture <Behavioral>).
-INFO:Xst:1561 - "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" line 65: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd" line 65: Mux is complete : default of case is discarded
 Entity <RegisterMux> analyzed. Unit <RegisterMux> generated.
 
 Analyzing Entity <SIMPREG> in library <work> (Architecture <SIMPLE>).
@@ -179,9 +180,9 @@ Analyzing Entity <SSeg_toplevel> in library <work> (Architecture <Structural>).
 Entity <SSeg_toplevel> analyzed. Unit <SSeg_toplevel> generated.
 
 Analyzing Entity <SSegDriver> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:819 - "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" line 98: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" line 98: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <clk240hz>
-INFO:Xst:1561 - "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" line 120: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd" line 120: Mux is complete : default of case is discarded
 Entity <SSegDriver> analyzed. Unit <SSegDriver> generated.
 
 Analyzing Entity <ALU> in library <work> (Architecture <Structural>).
@@ -210,19 +211,22 @@ Entity <ALU_Mux> analyzed. Unit <ALU_Mux> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <SwitchMux>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/SwitchMux.vhd".
+    Found 4x8-bit ROM for signal <LEDOUT$mux0001> created at line 57.
     Found 8-bit register for signal <outp1>.
     Found 8-bit register for signal <outp2>.
     Found 8-bit register for signal <outp3>.
+    Found 8-bit register for signal <LEDOUT>.
     Found 2-bit up counter for signal <temp>.
     Summary:
+	inferred   1 ROM(s).
 	inferred   1 Counter(s).
-	inferred  24 D-type flip-flop(s).
+	inferred  32 D-type flip-flop(s).
 Unit <SwitchMux> synthesized.
 
 
 Synthesizing Unit <RegisterMux>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/RegisterMux.vhd".
     Found 8-bit register for signal <regmuxout>.
     Found 8-bit 4-to-1 multiplexer for signal <regmuxout$mux0001> created at line 57.
     Found 2-bit up counter for signal <temp>.
@@ -234,7 +238,7 @@ Unit <RegisterMux> synthesized.
 
 
 Synthesizing Unit <SIMPREG>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/reg.vhd".
     Found 8-bit register for signal <DOUT>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -242,7 +246,7 @@ Unit <SIMPREG> synthesized.
 
 
 Synthesizing Unit <SSegDriver>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg.vhd".
 WARNING:Xst:647 - Input <COL_EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16x7-bit ROM for signal <segnum>.
     Found 4x4-bit ROM for signal <AN_OUT$mux0001> created at line 104.
@@ -263,7 +267,7 @@ Unit <SSegDriver> synthesized.
 
 
 Synthesizing Unit <Arith_Unit>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_arithmetic_unit.vhd".
     Found 1-bit xor2 for signal <CCR<1>>.
     Found 9-bit addsub for signal <arith>.
     Summary:
@@ -272,7 +276,7 @@ Unit <Arith_Unit> synthesized.
 
 
 Synthesizing Unit <Logic_Unit>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_logic_unit.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_logic_unit.vhd".
 WARNING:Xst:653 - Signal <cmp<1:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
     Found 8-bit comparator equal for signal <cmp_2$cmp_eq0000> created at line 42.
     Found 8-bit comparator less for signal <cmp_3$cmp_lt0000> created at line 41.
@@ -282,7 +286,7 @@ Unit <Logic_Unit> synthesized.
 
 
 Synthesizing Unit <ALU_Shift_Unit>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_shift_unit.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_shift_unit.vhd".
     Found 8-bit shifter logical left for signal <shift_left>.
     Found 8-bit shifter logical right for signal <shift_right>.
     Summary:
@@ -291,7 +295,7 @@ Unit <ALU_Shift_Unit> synthesized.
 
 
 Synthesizing Unit <Load_Store_Unit>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/load_store_unit.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/load_store_unit.vhd".
 WARNING:Xst:647 - Input <IMMED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <reg>.
     Summary:
@@ -300,12 +304,12 @@ Unit <Load_Store_Unit> synthesized.
 
 
 Synthesizing Unit <ALU_Mux>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_mux.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_mux.vhd".
 Unit <ALU_Mux> synthesized.
 
 
 Synthesizing Unit <SSeg_toplevel>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/SevenSegmentDisplay/SevenSeg_toplevel.vhd".
 WARNING:Xst:653 - Signal <s1> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <s0> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <enl> is used but never assigned. This sourceless signal will be automatically connected to value 1.
@@ -315,12 +319,12 @@ Unit <SSeg_toplevel> synthesized.
 
 
 Synthesizing Unit <ALU>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/ALU/alu_toplevel.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/ALU/alu_toplevel.vhd".
 Unit <ALU> synthesized.
 
 
 Synthesizing Unit <BiggerBlackerBox>.
-    Related source file is "C:/Users/Drew/Documents/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd".
+    Related source file is "C:/Users/Miles/Documents/GitHub/ECE_368/Lab 2/Lab2FinalDesign/BiggerBlackerBox.vhd".
 WARNING:Xst:647 - Input <BTN<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <ldst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <en1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -334,18 +338,19 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
+# ROMs                                                 : 3
  16x7-bit ROM                                          : 1
  4x4-bit ROM                                           : 1
+ 4x8-bit ROM                                           : 1
 # Adders/Subtractors                                   : 1
  9-bit addsub                                          : 1
 # Counters                                             : 4
  17-bit up counter                                     : 1
  2-bit up counter                                      : 3
-# Registers                                            : 12
+# Registers                                            : 13
  1-bit register                                        : 2
  4-bit register                                        : 2
- 8-bit register                                        : 8
+ 8-bit register                                        : 9
 # Comparators                                          : 2
  8-bit comparator equal                                : 1
  8-bit comparator less                                 : 1
@@ -366,20 +371,25 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <SwitchMux>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_LEDOUT_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <SwitchMux> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
+# ROMs                                                 : 3
  16x7-bit ROM                                          : 1
  4x4-bit ROM                                           : 1
+ 4x8-bit ROM                                           : 1
 # Adders/Subtractors                                   : 1
  9-bit addsub                                          : 1
 # Counters                                             : 4
  17-bit up counter                                     : 1
  2-bit up counter                                      : 3
-# Registers                                            : 74
- Flip-Flops                                            : 74
+# Registers                                            : 82
+ Flip-Flops                                            : 82
 # Comparators                                          : 2
  8-bit comparator equal                                : 1
  8-bit comparator less                                 : 1
@@ -398,6 +408,10 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <LEDOUT_4> (without init value) has a constant value of 0 in block <SwitchMux>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LEDOUT_5> (without init value) has a constant value of 0 in block <SwitchMux>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LEDOUT_6> (without init value) has a constant value of 0 in block <SwitchMux>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LEDOUT_7> (without init value) has a constant value of 0 in block <SwitchMux>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <DP_OUT> (without init value) has a constant value of 1 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <BiggerBlackerBox> ...
@@ -422,8 +436,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 96
- Flip-Flops                                            : 96
+# Registers                                            : 100
+ Flip-Flops                                            : 100
 
 =========================================================================
 
@@ -449,31 +463,31 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 25
+# IOs                              : 33
 
 Cell Usage :
-# BELS                             : 251
+# BELS                             : 252
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 16
-#      LUT2                        : 37
+#      LUT2                        : 38
 #      LUT3                        : 36
 #      LUT4                        : 84
 #      MUXCY                       : 28
 #      MUXF5                       : 19
 #      VCC                         : 1
 #      XORCY                       : 25
-# FlipFlops/Latches                : 96
-#      FD                          : 10
+# FlipFlops/Latches                : 100
+#      FD                          : 14
 #      FDC                         : 10
 #      FDCE                        : 42
 #      FDE                         : 32
 #      FDR                         : 2
 # Clock Buffers                    : 2
 #      BUFGP                       : 2
-# IO Buffers                       : 22
+# IO Buffers                       : 30
 #      IBUF                        : 10
-#      OBUF                        : 12
+#      OBUF                        : 20
 =========================================================================
 
 Device utilization summary:
@@ -481,11 +495,11 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                       98  out of   4656     2%  
- Number of Slice Flip Flops:             96  out of   9312     1%  
- Number of 4 input LUTs:                177  out of   9312     1%  
- Number of IOs:                          25
- Number of bonded IOBs:                  24  out of    232    10%  
+ Number of Slices:                       99  out of   4656     2%  
+ Number of Slice Flip Flops:            100  out of   9312     1%  
+ Number of 4 input LUTs:                178  out of   9312     1%  
+ Number of IOs:                          33
+ Number of bonded IOBs:                  32  out of    232    13%  
  Number of GCLKs:                         2  out of     24     8%  
 
 ---------------------------
@@ -509,7 +523,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-BTN<0>                             | BUFGP                  | 36    |
+BTN<0>                             | BUFGP                  | 40    |
 CLK                                | BUFGP                  | 50    |
 sseg/SSeg/clk240hz                 | NONE(sseg/SSeg/pos_1)  | 10    |
 -----------------------------------+------------------------+-------+
@@ -538,10 +552,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BTN<0>'
-  Clock period: 3.415ns (frequency: 292.826MHz)
-  Total number of paths / destination ports: 78 / 36
+  Clock period: 3.514ns (frequency: 284.576MHz)
+  Total number of paths / destination ports: 86 / 40
 -------------------------------------------------------------------------
-Delay:               3.415ns (Levels of Logic = 1)
+Delay:               3.514ns (Levels of Logic = 1)
   Source:            switches/temp_0 (FF)
   Destination:       switches/outp2_7 (FF)
   Source Clock:      BTN<0> rising
@@ -551,12 +565,12 @@ Delay:               3.415ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.591   0.808  switches/temp_0 (switches/temp_0)
-     LUT2:I0->O            8   0.704   0.757  switches/outp2_cmp_eq00001 (switches/outp2_cmp_eq0000)
+     FDR:C->Q              6   0.591   0.844  switches/temp_0 (switches/temp_0)
+     LUT2:I0->O            9   0.704   0.820  switches/Mrom_LEDOUT_mux0001111 (switches/Mrom_LEDOUT_mux00011)
      FDE:CE                    0.555          switches/outp2_0
     ----------------------------------------
-    Total                      3.415ns (1.850ns logic, 1.565ns route)
-                                       (54.2% logic, 45.8% route)
+    Total                      3.514ns (1.850ns logic, 1.664ns route)
+                                       (52.6% logic, 47.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sseg/SSeg/clk240hz'
@@ -625,15 +639,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'BTN<0>'
 -------------------------------------------------------------------------
 Offset:              2.057ns (Levels of Logic = 1)
   Source:            SW<7> (PAD)
-  Destination:       switches/outp3_7 (FF)
+  Destination:       switches/outp2_7 (FF)
   Destination Clock: BTN<0> rising
 
-  Data Path: SW<7> to switches/outp3_7
+  Data Path: SW<7> to switches/outp2_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.218   0.531  SW_7_IBUF (SW_7_IBUF)
-     FDE:D                     0.308          switches/outp1_7
+     FDE:D                     0.308          switches/outp3_7
     ----------------------------------------
     Total                      2.057ns (1.526ns logic, 0.531ns route)
                                        (74.2% logic, 25.8% route)
@@ -678,16 +692,35 @@ Offset:              5.870ns (Levels of Logic = 2)
                                        (77.8% logic, 22.2% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BTN<0>'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            switches/LEDOUT_3 (FF)
+  Destination:       LED<3> (PAD)
+  Source Clock:      BTN<0> rising
+
+  Data Path: switches/LEDOUT_3 to LED<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  switches/LEDOUT_3 (switches/LEDOUT_3)
+     OBUF:I->O                 3.272          LED_3_OBUF (LED<3>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.37 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.66 secs
  
 --> 
 
-Total memory usage is 306408 kilobytes
+Total memory usage is 264348 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

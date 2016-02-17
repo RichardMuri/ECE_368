@@ -36,7 +36,8 @@ entity SwitchMux is
 			sel   : in STD_LOGIC;
 			outp1 : out STD_LOGIC_VECTOR(7 downto 0);
 			outp2 : out STD_LOGIC_VECTOR(7 downto 0);
-			outp3 : out STD_LOGIC_VECTOR(7 downto 0));
+			outp3 : out STD_LOGIC_VECTOR(7 downto 0);
+			LEDOUT: out STD_LOGIC_VECTOR(7 downto 0));
 		
 end SwitchMux;
 
@@ -56,16 +57,21 @@ begin
 			case (temp) is
 				when "00" =>
 					outp1 <= input;
+					LEDOUT <= "00000001";  
 				when "01" =>
 					outp2 <= input;
+					LEDOUT <= "00000010";
 				when "10" =>
 					outp3 <= input;
+					LEDOUT <= "00000100";
 				when "11" =>
+					LEDOUT <= "00001000";
 				when others =>
 					outp1 <= "00000000";
 					outp2 <= "00000000";
 					outp3 <= "00000000";					
-			
+					LEDOUT <= "00001111";
+					
 			end case;
 		end if;
 	end process;

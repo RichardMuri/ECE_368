@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab2FinalDesign.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="BiggerBlackerBox.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="BiggerBlackerBox.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="BiggerBlackerBox.lso"/>
@@ -33,9 +34,13 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="BiggerBlackerBox.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="BiggerBlackerBox.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BiggerBlackerBox.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="BiggerBlackerBox.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="BiggerBlackerBox.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="BiggerBlackerBox.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="BiggerBlackerBox.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="BiggerBlackerBox.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="BiggerBlackerBox.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="BiggerBlackerBox.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="BiggerBlackerBox.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="BiggerBlackerBox.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="BiggerBlackerBox_envsettings.html"/>
@@ -55,50 +60,58 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BiggerBlackerBox_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BiggerBlackerBox_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="biggerblackerbox.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="biggerblackerbox.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="biggerblackerbox.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1455681057" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1455681057">
+    <transform xil_pn:end_ts="1455735752" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1455735752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455681057" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3225061723425757266" xil_pn:start_ts="1455681057">
+    <transform xil_pn:end_ts="1455735752" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3225061723425757266" xil_pn:start_ts="1455735752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455681057" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4272170586931591848" xil_pn:start_ts="1455681057">
+    <transform xil_pn:end_ts="1455735752" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4272170586931591848" xil_pn:start_ts="1455735752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455681057" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1455681057">
+    <transform xil_pn:end_ts="1455735752" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1455735752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455681057" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3369491687217910672" xil_pn:start_ts="1455681057">
+    <transform xil_pn:end_ts="1455735752" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3369491687217910672" xil_pn:start_ts="1455735752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455681057" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1455681057">
+    <transform xil_pn:end_ts="1455735752" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1455735752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455681057" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5676881288127583714" xil_pn:start_ts="1455681057">
+    <transform xil_pn:end_ts="1455735752" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5676881288127583714" xil_pn:start_ts="1455735752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455734539" xil_pn:in_ck="-265111465781456991" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8515940893648751797" xil_pn:start_ts="1455734531">
+    <transform xil_pn:end_ts="1455739646" xil_pn:in_ck="-265111465781456991" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8515940893648751797" xil_pn:start_ts="1455739627">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="BiggerBlackerBox.lso"/>
       <outfile xil_pn:name="BiggerBlackerBox.ngc"/>
       <outfile xil_pn:name="BiggerBlackerBox.ngr"/>
@@ -112,11 +125,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1455734539" xil_pn:in_ck="5386035824531069660" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-557542618109533755" xil_pn:start_ts="1455734539">
+    <transform xil_pn:end_ts="1455739323" xil_pn:in_ck="5386035824531069660" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-557542618109533755" xil_pn:start_ts="1455739322">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455734544" xil_pn:in_ck="-5077193991019885873" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="557195708723899525" xil_pn:start_ts="1455734539">
+    <transform xil_pn:end_ts="1455739658" xil_pn:in_ck="-5077193991019885873" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="557195708723899525" xil_pn:start_ts="1455739646">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BiggerBlackerBox.bld"/>
@@ -125,7 +138,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1455734549" xil_pn:in_ck="2236800742111433392" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1455734544">
+    <transform xil_pn:end_ts="1455739666" xil_pn:in_ck="2236800742111433392" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1455739658">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -139,19 +152,44 @@
       <outfile xil_pn:name="BiggerBlackerBox_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1455734555" xil_pn:in_ck="-5789160523905390007" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1455734549">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1455739698" xil_pn:in_ck="-5789160523905390007" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1455739666">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BiggerBlackerBox.ncd"/>
       <outfile xil_pn:name="BiggerBlackerBox.pad"/>
       <outfile xil_pn:name="BiggerBlackerBox.par"/>
+      <outfile xil_pn:name="BiggerBlackerBox.ptwx"/>
       <outfile xil_pn:name="BiggerBlackerBox.unroutes"/>
       <outfile xil_pn:name="BiggerBlackerBox.xpi"/>
       <outfile xil_pn:name="BiggerBlackerBox_pad.csv"/>
       <outfile xil_pn:name="BiggerBlackerBox_pad.txt"/>
       <outfile xil_pn:name="BiggerBlackerBox_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1455739722" xil_pn:in_ck="4135074378924204496" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1455739698">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BiggerBlackerBox.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="biggerblackerbox.bgn"/>
+      <outfile xil_pn:name="biggerblackerbox.bit"/>
+      <outfile xil_pn:name="biggerblackerbox.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1455739740" xil_pn:in_ck="-3869024704454129670" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1455739738">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455739698" xil_pn:in_ck="-3979812198326025556" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1455739692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BiggerBlackerBox.twr"/>
+      <outfile xil_pn:name="BiggerBlackerBox.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>
 
